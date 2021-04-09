@@ -37,12 +37,12 @@ function draw() {
    
    if(movingObj.x<0) {
     music.stop()
-    movingObj.velocityX = 3;
+     movingObj.velocityX = 3;
    } 
    
    else if(movingObj.x>800) {
        music.stop()
-       movingObj.velocityX = -3;
+       movingObj.velocityX =-3;
    
     }
 
