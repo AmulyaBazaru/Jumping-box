@@ -18,29 +18,29 @@ function setup(){
     movingObj.velocityX = 3;
     movingObj.velocityY = 3;
 
-    fixedObj1 = createSprite(100.590,180,20);
+    fixedObj1 = createSprite(100,590,180,20);
     fixedObj1.shapeColor = "red";
     
-    fixedObj2 = createSprite(300.590,180,20);
+    fixedObj2 = createSprite(300,590,180,20);
     fixedObj2.shapeColor = "green";
 
-    fixedObj3 = createSprite(500.590,180,20);
+    fixedObj3 = createSprite(500,590,180,20);
     fixedObj3.shapeColor = "blue";
 
-    fixedObj4 = createSprite(700.590,180,20);
+    fixedObj4 = createSprite(700,590,180,20);
     fixedObj4.shapeColor = "yellow";
 
 }
 
 function draw() {
-    background(rgb(169,169,169));
+    background(rgb(10,10,10));
    
-   if(movingObj.x < 0) {
+   if(movingObj.x<0) {
     music.stop()
     movingObj.velocityX = 3;
    } 
    
-   else if(movingObj.x > 800) {
+   else if(movingObj.x>800) {
        music.stop()
        movingObj.velocityX = -3;
    
